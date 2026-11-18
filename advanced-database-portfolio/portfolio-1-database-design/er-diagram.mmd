@@ -1,0 +1,61 @@
+erDiagram
+    DEPARTMENTS ||--o{ STUDENTS : "1:N"
+    DEPARTMENTS ||--o{ LECTURERS : "1:N"
+    DEPARTMENTS ||--o{ COURSES : "1:N"
+    COURSES ||--o{ COURSE_OFFERINGS : "1:N"
+    LECTURERS ||--o{ COURSE_OFFERINGS : "1:N"
+    STUDENTS ||--o{ ENROLLMENTS : "1:N"
+    COURSE_OFFERINGS ||--o{ ENROLLMENTS : "1:N"
+    ENROLLMENTS ||--o| GRADES : "1:0..1"
+
+    DEPARTMENTS {
+        int department_id PK
+        string dept_code UK
+        string name UK
+        string faculty
+    }
+    STUDENTS {
+        int student_id PK
+        string matric_no UK
+        string full_name
+        string email UK
+        int level "700-900"
+        int department_id FK
+    }
+    LECTURERS {
+        int lecturer_id PK
+        string staff_no UK
+        string full_name
+        string rank
+        int department_id FK
+    }
+    COURSES {
+        int course_id PK
+        string course_code UK
+        string title
+        int credits "1-6"
+        int department_id FK
+    }
+    COURSE_OFFERINGS {
+        int offering_id PK
+        int course_id FK
+        int lecturer_id FK
+        string semester
+        string academic_year
+        int capacity "greater than 0"
+    }
+    ENROLLMENTS {
+        int enrollment_id PK
+        int student_id FK
+        int offering_id FK
+        string status
+        string enrolled_at
+    }
+    GRADES {
+        int enrollment_id PK_FK
+        float ca_score "0-40"
+        float exam_score "0-60"
+        float total_score "ca + exam"
+        string letter_grade
+        float grade_point "0.00-5.00"
+    }
