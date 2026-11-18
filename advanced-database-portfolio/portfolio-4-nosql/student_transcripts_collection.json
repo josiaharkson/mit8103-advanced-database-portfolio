@@ -1,0 +1,788 @@
+[
+  {
+    "_id": "ACU20260001",
+    "matric_no": "ACU20260001",
+    "full_name": "Adaeze Okoro",
+    "email": "adaeze.okoro@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MIT",
+      "name": "Information Technology"
+    },
+    "academic_summary": {
+      "total_units": 14,
+      "cgpa": 5.0
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8101",
+        "title": "Foundations of Information Technology",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 34.0,
+          "exam": 50.0,
+          "total": 84.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8103",
+        "title": "Advanced Database Systems",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 32.0,
+          "exam": 48.0,
+          "total": 80.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8105",
+        "title": "Network Architecture and Protocols",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 29.0,
+          "exam": 44.0,
+          "total": 73.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8107",
+        "title": "Enterprise Software Engineering",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 35.0,
+          "exam": 52.0,
+          "total": 87.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 30.0,
+          "exam": 42.0,
+          "total": 72.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260002",
+    "matric_no": "ACU20260002",
+    "full_name": "Babatunde Bello",
+    "email": "babatunde.bello@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MIT",
+      "name": "Information Technology"
+    },
+    "academic_summary": {
+      "total_units": 11,
+      "cgpa": 4.27
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8101",
+        "title": "Foundations of Information Technology",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 25.0,
+          "exam": 40.0,
+          "total": 65.0
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8103",
+        "title": "Advanced Database Systems",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 28.0,
+          "exam": 41.0,
+          "total": 69.0
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8107",
+        "title": "Enterprise Software Engineering",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 31.0,
+          "exam": 46.0,
+          "total": 77.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8113",
+        "title": "IT Governance and Risk Management",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 26.0,
+          "exam": 38.0,
+          "total": 64.0
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260003",
+    "matric_no": "ACU20260003",
+    "full_name": "Zainab Musa",
+    "email": "zainab.musa@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MCS",
+      "name": "Cybersecurity & Network Engineering"
+    },
+    "academic_summary": {
+      "total_units": 11,
+      "cgpa": 5.0
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8103",
+        "title": "Advanced Database Systems",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 33.0,
+          "exam": 49.0,
+          "total": 82.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8105",
+        "title": "Network Architecture and Protocols",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 36.0,
+          "exam": 53.0,
+          "total": 89.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 31.0,
+          "exam": 45.0,
+          "total": 76.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8115",
+        "title": "Information Security & Cryptography",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 34.0,
+          "exam": 48.0,
+          "total": 82.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260004",
+    "matric_no": "ACU20260004",
+    "full_name": "Chinedu Okafor",
+    "email": "chinedu.okafor@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MDS",
+      "name": "Data Science & Artificial Intelligence"
+    },
+    "academic_summary": {
+      "total_units": 8,
+      "cgpa": 4.0
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8103",
+        "title": "Advanced Database Systems",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 24.0,
+          "exam": 35.0,
+          "total": 59.0
+        },
+        "letter_grade": "C",
+        "grade_point": 3
+      },
+      {
+        "course_code": "MIT8109",
+        "title": "Applied Machine Learning & Analytics",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 35.0,
+          "exam": 51.0,
+          "total": 86.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 27.0,
+          "exam": 39.0,
+          "total": 66.0
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260005",
+    "matric_no": "ACU20260005",
+    "full_name": "Aisha Suleiman",
+    "email": "aisha.suleiman@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MIT",
+      "name": "Information Technology"
+    },
+    "academic_summary": {
+      "total_units": 9,
+      "cgpa": 4.67
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8101",
+        "title": "Foundations of Information Technology",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 30.0,
+          "exam": 43.0,
+          "total": 73.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8103",
+        "title": "Advanced Database Systems",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 29.0,
+          "exam": 45.0,
+          "total": 74.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8105",
+        "title": "Network Architecture and Protocols",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 27.0,
+          "exam": 40.0,
+          "total": 67.0
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260006",
+    "matric_no": "ACU20260006",
+    "full_name": "Kemi Musa",
+    "email": "kemi.musa6@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MDS",
+      "name": "Data Science & Artificial Intelligence"
+    },
+    "academic_summary": {
+      "total_units": 13,
+      "cgpa": 4.15
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8107",
+        "title": "Enterprise Software Engineering",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 29.1,
+          "exam": 37.4,
+          "total": 66.5
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8109",
+        "title": "Applied Machine Learning & Analytics",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 32.8,
+          "exam": 41.2,
+          "total": 74.0
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 36.3,
+          "exam": 27.0,
+          "total": 63.3
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8113",
+        "title": "IT Governance and Risk Management",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 21.9,
+          "exam": 52.2,
+          "total": 74.1
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8115",
+        "title": "Information Security & Cryptography",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 23.6,
+          "exam": 29.3,
+          "total": 52.9
+        },
+        "letter_grade": "C",
+        "grade_point": 3
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260007",
+    "matric_no": "ACU20260007",
+    "full_name": "Chinedu Eze",
+    "email": "chinedu.eze7@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MBA",
+      "name": "Business & Technology Management"
+    },
+    "academic_summary": {
+      "total_units": 13,
+      "cgpa": 3.46
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8103",
+        "title": "Advanced Database Systems",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 31.3,
+          "exam": 49.9,
+          "total": 81.2
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8105",
+        "title": "Network Architecture and Protocols",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 25.9,
+          "exam": 33.4,
+          "total": 59.3
+        },
+        "letter_grade": "C",
+        "grade_point": 3
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 34.7,
+          "exam": 47.7,
+          "total": 82.4
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8113",
+        "title": "IT Governance and Risk Management",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 19.9,
+          "exam": 43.3,
+          "total": 63.2
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8115",
+        "title": "Information Security & Cryptography",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 18.7,
+          "exam": 25.2,
+          "total": 43.9
+        },
+        "letter_grade": "E",
+        "grade_point": 1
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260008",
+    "matric_no": "ACU20260008",
+    "full_name": "Aisha Garba",
+    "email": "aisha.garba8@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MIT",
+      "name": "Information Technology"
+    },
+    "academic_summary": {
+      "total_units": 13,
+      "cgpa": 4.54
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8101",
+        "title": "Foundations of Information Technology",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 25.1,
+          "exam": 45.6,
+          "total": 70.7
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8105",
+        "title": "Network Architecture and Protocols",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 33.2,
+          "exam": 43.1,
+          "total": 76.3
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 25.2,
+          "exam": 44.0,
+          "total": 69.2
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8113",
+        "title": "IT Governance and Risk Management",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 25.6,
+          "exam": 26.5,
+          "total": 52.1
+        },
+        "letter_grade": "C",
+        "grade_point": 3
+      },
+      {
+        "course_code": "MIT8115",
+        "title": "Information Security & Cryptography",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 35.1,
+          "exam": 44.6,
+          "total": 79.7
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260009",
+    "matric_no": "ACU20260009",
+    "full_name": "Femi Nwosu",
+    "email": "femi.nwosu9@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MCS",
+      "name": "Cybersecurity & Network Engineering"
+    },
+    "academic_summary": {
+      "total_units": 14,
+      "cgpa": 4.36
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8101",
+        "title": "Foundations of Information Technology",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 31.0,
+          "exam": 32.3,
+          "total": 63.3
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8107",
+        "title": "Enterprise Software Engineering",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 30.0,
+          "exam": 47.9,
+          "total": 77.9
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8109",
+        "title": "Applied Machine Learning & Analytics",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 29.2,
+          "exam": 27.8,
+          "total": 57.0
+        },
+        "letter_grade": "C",
+        "grade_point": 3
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 36.8,
+          "exam": 55.8,
+          "total": 92.6
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8115",
+        "title": "Information Security & Cryptography",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 31.9,
+          "exam": 47.8,
+          "total": 79.7
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      }
+    ]
+  },
+  {
+    "_id": "ACU20260010",
+    "matric_no": "ACU20260010",
+    "full_name": "Nneka Suleiman",
+    "email": "nneka.suleiman10@apexuni.edu.ng",
+    "level": 800,
+    "department": {
+      "code": "MDS",
+      "name": "Data Science & Artificial Intelligence"
+    },
+    "academic_summary": {
+      "total_units": 13,
+      "cgpa": 3.69
+    },
+    "transcript_records": [
+      {
+        "course_code": "MIT8103",
+        "title": "Advanced Database Systems",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 22.2,
+          "exam": 27.1,
+          "total": 49.3
+        },
+        "letter_grade": "D",
+        "grade_point": 2
+      },
+      {
+        "course_code": "MIT8107",
+        "title": "Enterprise Software Engineering",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 22.9,
+          "exam": 37.0,
+          "total": 59.9
+        },
+        "letter_grade": "C",
+        "grade_point": 3
+      },
+      {
+        "course_code": "MIT8111",
+        "title": "Cloud Computing & Distributed Systems",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 22.4,
+          "exam": 47.3,
+          "total": 69.7
+        },
+        "letter_grade": "B",
+        "grade_point": 4
+      },
+      {
+        "course_code": "MIT8113",
+        "title": "IT Governance and Risk Management",
+        "credits": 2,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 37.1,
+          "exam": 39.7,
+          "total": 76.8
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      },
+      {
+        "course_code": "MIT8115",
+        "title": "Information Security & Cryptography",
+        "credits": 3,
+        "semester": "First",
+        "academic_year": "2026/2027",
+        "assessment": {
+          "ca": 27.7,
+          "exam": 46.2,
+          "total": 73.9
+        },
+        "letter_grade": "A",
+        "grade_point": 5
+      }
+    ]
+  }
+]

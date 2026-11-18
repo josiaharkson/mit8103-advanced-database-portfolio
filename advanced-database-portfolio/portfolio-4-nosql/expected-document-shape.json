@@ -1,0 +1,87 @@
+{
+  "_id": "ACU20260001",
+  "matric_no": "ACU20260001",
+  "full_name": "Adaeze Okoro",
+  "email": "adaeze.okoro@apexuni.edu.ng",
+  "level": 800,
+  "department": {
+    "code": "MIT",
+    "name": "Information Technology"
+  },
+  "academic_summary": {
+    "total_units": 14,
+    "cgpa": 5.0
+  },
+  "transcript_records": [
+    {
+      "course_code": "MIT8101",
+      "title": "Foundations of Information Technology",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 34,
+        "exam": 50,
+        "total": 84
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8103",
+      "title": "Advanced Database Systems",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 32,
+        "exam": 48,
+        "total": 80
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8105",
+      "title": "Network Architecture and Protocols",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 29,
+        "exam": 44,
+        "total": 73
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8107",
+      "title": "Enterprise Software Engineering",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 35,
+        "exam": 52,
+        "total": 87
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8111",
+      "title": "Cloud Computing & Distributed Systems",
+      "credits": 2,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 30,
+        "exam": 42,
+        "total": 72
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    }
+  ]
+}
