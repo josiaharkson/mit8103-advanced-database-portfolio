@@ -1,0 +1,41 @@
+=== PORTFOLIO 2: SQL EXECUTION & INDEX BENCHMARK LOG ===
+Database: university_portal.db (SQLite 3.53.1)
+Dataset volume: 500 students | 8 offerings | 2494 enrollments | 2494 grades
+Reproduce: sqlite3 university_portal.db < schema.sql, then < seed.sql (Portfolio 1), then run queries.sql / index-comparison.sql (Portfolio 2).
+
+--- QUERY 1 OUTPUT: TRANSCRIPT FOR ACU20260001 ---
+matric_no | full_name | course_code | title | credits | ca | exam | total | grade | gp
+ACU20260001 | Adaeze Okoro | MIT8101 | Foundations of Information Technology | 3 | 34 | 50 | 84 | A | 5
+ACU20260001 | Adaeze Okoro | MIT8103 | Advanced Database Systems | 3 | 32 | 48 | 80 | A | 5
+ACU20260001 | Adaeze Okoro | MIT8105 | Network Architecture and Protocols | 3 | 29 | 44 | 73 | A | 5
+ACU20260001 | Adaeze Okoro | MIT8107 | Enterprise Software Engineering | 3 | 35 | 52 | 87 | A | 5
+ACU20260001 | Adaeze Okoro | MIT8111 | Cloud Computing & Distributed Systems | 2 | 30 | 42 | 72 | A | 5
+
+--- QUERY 2 OUTPUT: COURSE PERFORMANCE ANALYTICS ---
+course_code | title | lecturer | graded | mean | max | min | pass_rate_pct
+MIT8107 | Enterprise Software Engineering | Dr. Fatima Abdullahi | 312 | 62.11 | 89 | 33 | 80.4
+MIT8111 | Cloud Computing & Distributed Systems | Dr. Ibrahim Danjuma | 315 | 62.1 | 92.6 | 33 | 80.3
+MIT8103 | Advanced Database Systems | Dr. Chika Obi | 312 | 62.06 | 91 | 33 | 80.4
+MIT8113 | IT Governance and Risk Management | Dr. Babatunde Adeyemi | 312 | 61.97 | 89 | 33 | 81.4
+MIT8105 | Network Architecture and Protocols | Dr. Ibrahim Danjuma | 311 | 61.87 | 91 | 33 | 80.7
+MIT8109 | Applied Machine Learning & Analytics | Dr. Ngozi Eze | 310 | 61.8 | 91 | 33 | 80.0
+MIT8101 | Foundations of Information Technology | Prof. Amina Lawal | 310 | 61.78 | 89 | 33 | 80.0
+MIT8115 | Information Security & Cryptography | Dr. Chika Obi | 312 | 61.74 | 91 | 33 | 79.8
+
+--- QUERY 3 OUTPUT: TOP 5 CGPA LEADERBOARD ---
+dept | matric_no | full_name | total_units | gpa
+MIT | ACU20260001 | Adaeze Okoro | 14 | 5.0
+MCS | ACU20260003 | Zainab Musa | 11 | 5.0
+MBA | ACU20260016 | Sani Adeyemi | 15 | 4.0
+MBA | ACU20260104 | Emeka Ojo | 15 | 4.0
+MBA | ACU20260268 | Yusuf Obi | 15 | 4.0
+
+--- INDEX BENCHMARK (500-run mean, offering_id = 2, letter_grade = 'A') ---
+Rows returned: 75
+Before indexes:
+  Plan: [(4, 0, 210, 'SCAN e USING COVERING INDEX sqlite_autoindex_enrollments_1'), (8, 0, 46, 'SEARCH g USING INDEX sqlite_autoindex_grades_1 (enrollment_id=?)')]
+  Mean: 0.1957 ms
+After composite covering indexes idx_enrollments_offering(offering_id, student_id) and idx_grades_grade_score(letter_grade, enrollment_id, total_score):
+  Plan: [(4, 0, 92, 'SEARCH e USING COVERING INDEX idx_enrollments_offering (offering_id=?)'), (8, 0, 42, 'SEARCH g USING INDEX idx_grades_grade_score (letter_grade=? AND enrollment_id=?)')]
+  Mean: 0.1058 ms
+Gain: 1.85x faster (46.0% lower mean latency)

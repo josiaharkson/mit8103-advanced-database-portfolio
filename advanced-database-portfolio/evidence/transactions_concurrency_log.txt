@@ -1,0 +1,20 @@
+=== PORTFOLIO 3: ACID TRANSACTIONS & TWO-SESSION CONCURRENCY LOG ===
+Note: tests run on a working copy of university_portal.db so the seeded database keeps capacity 400 per offering.
+
+--- TEST 1: ATOMIC ENROLLMENT WITH COMMIT ---
+Initial state: offering_id=5 capacity=400, enrollments(student_id=1, offering_id=5)=0
+Action: BEGIN IMMEDIATE; INSERT enrollment (student 1, offering 5); UPDATE capacity = capacity - 1; COMMIT
+Post-commit state: offering_id=5 capacity=399, enrollments(student_id=1, offering_id=5)=1
+Verified on a second connection: count=1. Both changes persisted together.
+
+--- TEST 2: GRADE AUDIT & ROLLBACK RECOVERY ---
+Before transaction (enrollment_id=1): CA=34, Exam=50, Total=84, Grade=A
+Inside transaction after UPDATE: CA=40, Exam=60, Total=100, Grade=A
+After ROLLBACK: CA=34, Exam=50, Total=84, Grade=A
+Result: the uncommitted change was reverted in full.
+
+--- TEST 3: TWO-SESSION WRITE-LOCK CONTENTION ---
+[Session A] BEGIN IMMEDIATE; UPDATE course_offerings SET capacity = capacity - 1 WHERE offering_id = 1 (uncommitted).
+[Session B] Concurrent UPDATE blocked for 188.1 ms and raised OperationalError: database is locked
+[Session A] COMMIT (lock released).
+[Session B] Retry succeeded. offering_id=1 capacity: 400 -> 398 (two decrements kept, no lost update).

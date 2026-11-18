@@ -1,0 +1,19 @@
+flowchart LR
+    clients["Portal Clients<br/>Web / Mobile TLS 1.3"]
+    subgraph vpc["Private Cloud VPC - Multi-AZ Production Deployment, eu-west-1"]
+        gateway["API Gateway and<br/>PgBouncer Pooler"]
+        subgraph aza["Availability Zone A - Primary"]
+            primary["PostgreSQL Primary<br/>Read/Write ACID Master"]
+        end
+        subgraph azb["Availability Zone B - Standby / Replica"]
+            replica["PostgreSQL Read Replica<br/>Sync Standby and Reporting"]
+        end
+        atlas["MongoDB Atlas<br/>Transcript Cache"]
+        pitr["PITR Object Store<br/>WAL and Encrypted S3"]
+    end
+    clients --> gateway
+    gateway -->|"R/W"| primary
+    gateway -->|"Read-Only"| replica
+    primary -->|"WAL Streaming"| replica
+    primary -->|"CDC"| atlas
+    primary --> pitr

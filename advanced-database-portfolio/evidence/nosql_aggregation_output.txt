@@ -1,0 +1,143 @@
+=== PORTFOLIO 4: NOSQL DOCUMENT & AGGREGATION OUTPUT ===
+Collection: student_transcripts (10 documents exported from the relational database)
+
+--- 1. SINGLE-DOCUMENT TRANSCRIPT (_id: "ACU20260001") ---
+{
+  "_id": "ACU20260001",
+  "matric_no": "ACU20260001",
+  "full_name": "Adaeze Okoro",
+  "email": "adaeze.okoro@apexuni.edu.ng",
+  "level": 800,
+  "department": {
+    "code": "MIT",
+    "name": "Information Technology"
+  },
+  "academic_summary": {
+    "total_units": 14,
+    "cgpa": 5.0
+  },
+  "transcript_records": [
+    {
+      "course_code": "MIT8101",
+      "title": "Foundations of Information Technology",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 34,
+        "exam": 50,
+        "total": 84
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8103",
+      "title": "Advanced Database Systems",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 32,
+        "exam": 48,
+        "total": 80
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8105",
+      "title": "Network Architecture and Protocols",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 29,
+        "exam": 44,
+        "total": 73
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8107",
+      "title": "Enterprise Software Engineering",
+      "credits": 3,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 35,
+        "exam": 52,
+        "total": 87
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    },
+    {
+      "course_code": "MIT8111",
+      "title": "Cloud Computing & Distributed Systems",
+      "credits": 2,
+      "semester": "First",
+      "academic_year": "2026/2027",
+      "assessment": {
+        "ca": 30,
+        "exam": 42,
+        "total": 72
+      },
+      "letter_grade": "A",
+      "grade_point": 5
+    }
+  ]
+}
+
+--- 2. AGGREGATION $unwind -> $group BY course_code ---
+[
+  {
+    "_id": "MIT8101",
+    "student_count": 5,
+    "avg_total_score": 71.2,
+    "max_score": 84.0
+  },
+  {
+    "_id": "MIT8103",
+    "student_count": 7,
+    "avg_total_score": 70.64,
+    "max_score": 82.0
+  },
+  {
+    "_id": "MIT8105",
+    "student_count": 5,
+    "avg_total_score": 72.92,
+    "max_score": 89.0
+  },
+  {
+    "_id": "MIT8107",
+    "student_count": 5,
+    "avg_total_score": 73.66,
+    "max_score": 87.0
+  },
+  {
+    "_id": "MIT8109",
+    "student_count": 3,
+    "avg_total_score": 72.33,
+    "max_score": 86.0
+  },
+  {
+    "_id": "MIT8111",
+    "student_count": 8,
+    "avg_total_score": 73.9,
+    "max_score": 92.6
+  },
+  {
+    "_id": "MIT8113",
+    "student_count": 5,
+    "avg_total_score": 66.04,
+    "max_score": 76.8
+  },
+  {
+    "_id": "MIT8115",
+    "student_count": 6,
+    "avg_total_score": 68.68,
+    "max_score": 82.0
+  }
+]
